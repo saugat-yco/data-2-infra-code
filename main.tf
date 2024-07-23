@@ -41,7 +41,7 @@ resource "google_compute_instance" "vm-1" {
 
   network_interface {
     network    = google_compute_network.default.name
-    subnetwork = google_compute_subnetwork.primary_net_subnet.name
+    subnetwork = "subnet-australia-southeast1"
     stack_type = "IPV4_ONLY"
 
     access_config {
